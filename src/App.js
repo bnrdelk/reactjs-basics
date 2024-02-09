@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Employee salary={1000} position="Candidate" company="X" />
+     <Employee salary={6000} position="Junior" company="Y" />
+     <Employee salary={10000} position="Manager" company="Z" />
     </div>
+  );
+}
+
+const Employee = (probs) => {
+  return (
+    <div >
+      <h1>{probs.salary}</h1>
+      <h1>{probs.position}</h1>
+      <h1>{probs.company}</h1>
+   </div>
   );
 }
 
